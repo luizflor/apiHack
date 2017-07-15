@@ -1,0 +1,27 @@
+<div class="row container-fluid">
+  <!--<form id="branches" (ngSubmit)="onBranches()">-->
+  <div class="row">
+    <div class="col-sm-1">
+      <button class="btn btn-success" type="submit" (click)="onOauth('CARDS')">OAuth CARDS</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-1">
+      <button class="btn btn-primary" type="submit" (click)="onOauth('DEPOSITS')">OAuth DEPOSITS</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-1">
+      <button class="btn btn-info" type="submit" (click)="onBranches()">get branches</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-1">
+      <button class="btn btn-danger" type="submit" (click)="onGetTransactions()">get transactions</button>
+    </div>
+  </div>
+  <!--</form>-->
+</div>
