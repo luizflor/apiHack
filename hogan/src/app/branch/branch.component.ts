@@ -32,9 +32,8 @@ export class BranchComponent implements OnInit {
           () => this.isBusy = false);
   }
 
-  onGetTransactions(){
+  getTransactions(account){
 
-    var account = "1234560002895";
     this.branchService.getTransactions(this.oauthCards, account)
         .subscribe(
           (data: Transactions) => {
@@ -46,6 +45,14 @@ export class BranchComponent implements OnInit {
 
           },
           () => this.isBusy = false);
+  }
+
+  onGetTransactions(){
+
+    this.getTransactions("1234560000956");
+    this.getTransactions("1234560000980");
+    this.getTransactions("1234560001467");
+    this.getTransactions("1234560002895");
   }
 
   onOauth(oauth:string){
